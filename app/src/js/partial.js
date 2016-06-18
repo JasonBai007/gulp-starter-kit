@@ -1,4 +1,1 @@
-for (i=0,l=5;i<l;i++) {
-	var abc = 'abcde';
-	console.log(abc);
-}
+console.log('此处不是彩蛋，哈哈哈 哈哈哈');

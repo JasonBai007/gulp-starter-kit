@@ -17,7 +17,8 @@ var paths = {
 };
 
 // 定义默认任务
-gulp.task('default', ['connect','watch']);
+gulp.task('default', ['connect','html','less','js']);
+gulp.task('watchme', ['connect','watch']);
 
 //使用connect启动一个Web服务器
 gulp.task('connect', function () {
@@ -37,7 +38,7 @@ gulp.task('html', function () {
 gulp.task('less', function() {
 	return  gulp.src(paths.less)
 			.pipe(less({ plugins: [autoprefix] }))
-  			.pipe(cleanCSS())
+  			// .pipe(cleanCSS())
   			.pipe(concat('buddle.min.css'))
 			.pipe(gulp.dest('app/dist/css'))
 			.pipe(connect.reload());
@@ -45,7 +46,7 @@ gulp.task('less', function() {
 // 定义处理JS任务
 gulp.task('js', function() {
 	return  gulp.src(paths.js)
-			.pipe(uglify())
+			// .pipe(uglify())
 			.pipe(concat('buddle.min.js'))
 			.pipe(gulp.dest('app/dist/js'))
 			.pipe(connect.reload());

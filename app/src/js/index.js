@@ -1,2 +1,2 @@
-var btn = document.querySelector('.active');
-console.log(btn.style);
+var height = window.innerHeight;
+document.querySelector('body').style.height = height + 'px';
