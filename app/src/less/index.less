@@ -9,11 +9,12 @@ body {
 	display: table;
 	width: 100%;
 	
-	.wrap {		
+	.on {		
 		text-align: center;
 		display: table-cell;
 		vertical-align: middle;
 		overflow-x: hidden;
+		perspective: 1000;
 	}
 	.bgimg {
 		position: absolute;
@@ -26,4 +27,16 @@ body {
 		filter: blur(22px);
 		filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); 
 	}
+}
+
+.turn {
+	transform: rotateY(-180deg);
+	transition: transform 1s;
+	background-image: url('../img/babala.jpg') !important;
+}
+
+.turnOff {
+	transform: rotateY(0deg);
+	transition: transform 1s;
+	background-image: url('../img/girl.jpg') !important;
 }

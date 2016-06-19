@@ -2,12 +2,21 @@ var height = window.innerHeight;
 document.querySelector('body').style.height = height + 'px';
 
 var music = document.querySelector('#music'); 
-document.querySelector('#girl').addEventListener('click', function() {
+$('#girl').click(function(e) {
+	e.stopPropagation();
 	$(this).toggleClass('roll');
 	if( music.paused ) {                 
 	    music.play();  
 	}else{
 	 	music.pause();
+	}
+});
+
+$('.on').click(function(e) {
+	if( $('#girl').hasClass('turn') ) {
+		$('#girl').removeClass('turn').addClass('turnOff');
+	} else {
+		$('#girl').removeClass('turnOff').addClass('turn');
 	}
 });
  
