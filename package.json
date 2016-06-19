@@ -4,6 +4,8 @@
   "description": "实现前端自动化",
   "main": "index.js",
   "scripts": {
+    "build":"gulp",
+    "start":"gulp watchme",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -17,7 +17,7 @@ var paths = {
 };
 
 // 定义默认任务
-gulp.task('default', ['connect','html','less','js']);
+gulp.task('default', ['less','js']);
 gulp.task('watchme', ['connect','watch']);
 
 //使用connect启动一个Web服务器
