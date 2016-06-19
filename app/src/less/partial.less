@@ -1,3 +1,21 @@
-.key {
-	color:#1ABC9C;
+#girl {
+	width: 50rem;
+	height: 50rem;
+	border-radius: 25rem;
+	margin: 0 auto;
+	border: 14px solid #1ABC9C;
+	background: url(../img/girl.jpg) no-repeat;
+	background-clip: content-box;
+	background-size: cover;	
+}
+.roll {
+	animation: rotateme 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes rotateme
+{
+0%   {transform: rotate(0deg);}
+100% {transform: rotate(360deg);}
 }

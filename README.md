@@ -12,9 +12,10 @@
 * 自带静态服务器
 
 ### Usage
-> 1、安装依赖：$ npm install  
-> 2、静态文件：$ npm run build  
-> 3、自动监控：$ npm start  
+> 1、全局安装gulp：$ npm i -g gulp  
+> 1、进入项目根目录安装依赖：$ npm install  
+> 2、生成静态文件：$ npm run build  
+> 3、开启服务器和监控：$ npm start  
  
 
 ### Articles
