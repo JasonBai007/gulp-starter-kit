@@ -53,10 +53,10 @@ body .bgimg {
 #girl {
   -moz-box-sizing: border-box;
        box-sizing: border-box;
-  width: 50rem;
-  height: 50rem;
-  -moz-border-radius: 25rem;
-       border-radius: 25rem;
+  width: 60rem;
+  height: 60rem;
+  -moz-border-radius: 30rem;
+       border-radius: 30rem;
   margin: 0 auto;
   border: 14px solid #1ABC9C;
   background: url(../img/girl.jpg) no-repeat;
@@ -67,7 +67,7 @@ body .bgimg {
 }
 #girl p {
   color: #BDC3C7;
-  margin-top: 33%;
+  margin-top: 30%;
   font-size: 14rem;
   font-family: fantasy;
   letter-spacing: 5px;
