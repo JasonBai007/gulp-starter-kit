@@ -1,5 +1,7 @@
 var height = window.innerHeight;
 document.querySelector('body').style.height = height + 'px';
+var preImg = new Image();
+preImg.src = './dist/img/babala.jpg';
 
 var music = document.querySelector('#music'); 
 $('#girl').click(function(e) {
