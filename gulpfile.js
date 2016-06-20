@@ -38,7 +38,7 @@ gulp.task('html', function () {
 gulp.task('less', function() {
 	return  gulp.src(paths.less)
 			.pipe(less({ plugins: [autoprefix] }))
-  			// .pipe(cleanCSS())
+  			.pipe(cleanCSS())
   			.pipe(concat('buddle.min.css'))
 			.pipe(gulp.dest('app/dist/css'))
 			.pipe(connect.reload());
@@ -46,7 +46,7 @@ gulp.task('less', function() {
 // 定义处理JS任务
 gulp.task('js', function() {
 	return  gulp.src(paths.js)
-			// .pipe(uglify())
+			.pipe(uglify())
 			.pipe(concat('buddle.min.js'))
 			.pipe(gulp.dest('app/dist/js'))
 			.pipe(connect.reload());
