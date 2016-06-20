@@ -82,6 +82,9 @@ body .bgimg {
   -webkit-animation-timing-function: linear;
      -moz-animation-timing-function: linear;
           animation-timing-function: linear;
+          -webkit-animation-fill-mode: forwards;
+     -moz-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .stop {
   -webkit-animation-play-state: paused;
