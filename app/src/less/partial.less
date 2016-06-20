@@ -1,4 +1,5 @@
 #girl {
+  box-sizing: border-box;
 	width: 50rem;
 	height: 50rem;
 	border-radius: 25rem;
@@ -7,11 +8,24 @@
 	background: url(../img/girl.jpg) no-repeat;
 	background-clip: content-box;
 	background-size: cover;	
+  p {
+    color: #BDC3C7;
+    margin-top: 33%;
+    font-size: 14rem;
+    font-family: fantasy;
+    letter-spacing: 5px;
+  }
 }
 .roll {
 	animation: rotateme 10s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
+}
+.stop {
+  animation-play-state: paused;
+}
+.run {
+  animation-play-state: running;
 }
 
 @keyframes rotateme

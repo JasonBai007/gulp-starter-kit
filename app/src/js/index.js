@@ -1,12 +1,21 @@
+// 设置页面初始高度
 var height = window.innerHeight;
 document.querySelector('body').style.height = height + 'px';
-var preImg = new Image();
-preImg.src = './dist/img/babala.jpg';
 
 var music = document.querySelector('#music'); 
-$('#girl').click(function(e) {
+var girl = document.querySelector('#girl'); 
+var on = document.querySelector('.on'); 
+
+// 女孩事件
+girl.addEventListener('click',function(e) {
 	e.stopPropagation();
-	$(this).toggleClass('roll');
+	if (this.classList.contains('stop')) {
+		this.classList.add('run');		
+		this.classList.remove('stop');
+	} else {
+		this.classList.remove('run');
+		this.classList.add('stop');	
+	}
 	if( music.paused ) {                 
 	    music.play();  
 	}else{
@@ -14,11 +23,18 @@ $('#girl').click(function(e) {
 	}
 });
 
-$('.on').click(function(e) {
-	if( $('#girl').hasClass('turn') ) {
-		$('#girl').removeClass('turn').addClass('turnOff');
+// 背景事件
+on.addEventListener('click',function(e) {
+	if( girl.classList.contains('turn') ) {
+		girl.classList.remove('turn');
+		girl.classList.add('turnOff');
+		girl.removeChild(girl.childNodes[0]);
 	} else {
-		$('#girl').removeClass('turnOff').addClass('turn');
+		girl.classList.remove('turnOff');
+		girl.classList.add('turn');
+		var node=document.createElement("p");
+		var textnode=document.createTextNode("Jason");
+		node.appendChild(textnode);
+		girl.appendChild(node);
 	}
 });
- 

@@ -4,7 +4,7 @@ var concat = require('gulp-concat');  //合并
 var rename = require('gulp-rename');  //重命名
 var less = require('gulp-less');
 var LessAutoprefix = require('less-plugin-autoprefix');
-var autoprefix = new LessAutoprefix({ browsers: ['Firefox < 20','>5%','ie 8','ie 9'] });
+var autoprefix = new LessAutoprefix({ browsers: ['Firefox < 20','>5%'] });
 var cleanCSS = require('gulp-clean-css');
 var uglify = require('gulp-uglify');
 
