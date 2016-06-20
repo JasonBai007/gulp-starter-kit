@@ -10,6 +10,7 @@
 * 配置文件自由定制
 * 自带静态服务器
 * 可同时生成压缩和非压缩文件
+* 摆脱jquery，节省带宽
 
 ### Usage
 > 1、全局安装gulp：$ npm i -g gulp  
@@ -21,6 +22,9 @@
 ### Articles
 * [gulp API 文档](http://www.gulpjs.com.cn/docs/api/)
 * [彻底弄懂css中单位px和em,rem的区别](http://www.cnblogs.com/leejersey/p/3662612.html)
+* [如何做到 jQuery-free？](http://www.ruanyifeng.com/blog/2013/05/jquery-free.html)
+* [BootCDN](http://www.bootcdn.cn/?)
+* [Animate.css](https://daneden.github.io/animate.css/)
 
 License
 ----
