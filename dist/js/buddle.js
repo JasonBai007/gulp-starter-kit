@@ -18,7 +18,7 @@ $('#girl').tap(function(e) {
 });
 
 // 背景事件
-$('.on').swipe(function(e) {
+$('.on').tap(function(e) {
 	if( girl.classList.contains('turn') ) {
 		girl.classList.remove('turn');
 		girl.classList.add('turnOff');
