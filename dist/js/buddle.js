@@ -7,7 +7,7 @@ var girl = document.querySelector('#girl');
 var on = document.querySelector('.on'); 
 
 // 女孩事件
-girl.addEventListener('click',function(e) {
+$('#girl').tap(function(e) {
 	e.stopPropagation();
 	if (this.classList.contains('stop')) {
 		this.classList.add('run');		
@@ -24,7 +24,7 @@ girl.addEventListener('click',function(e) {
 });
 
 // 背景事件
-on.addEventListener('click',function(e) {
+$('.on').swipe(function(e) {
 	if( girl.classList.contains('turn') ) {
 		girl.classList.remove('turn');
 		girl.classList.add('turnOff');
