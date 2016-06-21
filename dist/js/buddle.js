@@ -9,13 +9,7 @@ var on = document.querySelector('.on');
 // 女孩事件
 $('#girl').tap(function(e) {
 	e.stopPropagation();
-	if (this.classList.contains('stop')) {
-		this.classList.add('run');		
-		this.classList.remove('stop');
-	} else {
-		this.classList.remove('run');
-		this.classList.add('stop');	
-	}
+	$(this).toggleClass('roll');		
 	if( music.paused ) {                 
 	    music.play();  
 	}else{
@@ -28,14 +22,9 @@ $('.on').swipe(function(e) {
 	if( girl.classList.contains('turn') ) {
 		girl.classList.remove('turn');
 		girl.classList.add('turnOff');
-		girl.removeChild(girl.childNodes[0]);
 	} else {
 		girl.classList.remove('turnOff');
-		girl.classList.add('turn');
-		var node=document.createElement("p");
-		var textnode=document.createTextNode("Jason");
-		node.appendChild(textnode);
-		girl.appendChild(node);
+		girl.classList.add('turn');		
 	}
 });
  // 彩蛋
