@@ -1,15 +1,14 @@
 # Profile
-> Target：借助 npm 和 gulp 实现前端开发自动化.  
-> Techs：html5 + css3 + npm + gulp + Zepto
+> Target：借助 npm 和 gulp 实现前端开发自动化  
+> Techs：less + jquery + npm + gulp  
 
 ### Features
-* 自动编译：LESS > CSS > Autoprefix > Compression > Concat
-* 自动编译：JS > Compression > Concat
-* 随时监控文件变化
+* 自动编译：LESS > CSS > Compression > Concat > Rename
+* 自动编译：JS > Uglify > Concat > Rename
+* 实时监控文件变化
 * 浏览器自动刷新
-* 配置文件自由定制
+* 自由定制监控文件
 * 自带静态服务器
-* 同时生成压缩和非压缩文件
 
 ### Usage
 > 1、全局安装gulp：$ npm i -g gulp  
