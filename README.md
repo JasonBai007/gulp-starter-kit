@@ -1,6 +1,6 @@
 # Profile
 > Target：借助 npm 和 gulp 实现前端开发自动化  
-> Techs：less + jquery + npm + gulp  
+> Techs：less + jquery + npm + gulp + AnimateCSS + MockJS  
 
 ### Features
 * 自动编译：LESS > CSS > Compression > Concat > Rename
@@ -9,6 +9,7 @@
 * 浏览器自动刷新
 * 自由定制监控文件
 * 自带静态服务器
+* 前端自主模拟假数据
 
 ### Usage
 > 1、全局安装gulp：$ npm i -g gulp  
@@ -23,6 +24,7 @@
 * [You-Dont-Need-jQuery](https://github.com/oneuijs/You-Dont-Need-jQuery/blob/master/README.zh-CN.md)
 * [Animate.css](https://daneden.github.io/animate.css/)
 * [彻底弄懂css中单位px和em,rem的区别](http://www.cnblogs.com/leejersey/p/3662612.html)
+* [Browsersync说明文档](http://www.browsersync.cn/docs/)
 
 License
 ----
