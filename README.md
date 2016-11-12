@@ -14,8 +14,9 @@
 ### Usage
 > 1、全局安装gulp：$ npm i -g gulp  
 > 1、进入项目根目录安装依赖：$ npm install  
-> 2、生成静态文件：$ npm run build  
+> 2、生成静态文件：$ npm run dev  
 > 3、开启服务器和监控：$ npm start   
+> 4、部署压缩后文件：$ npm run deploy   
 
 ### Articles
 * [gulp API 文档](http://www.gulpjs.com.cn/docs/api/)
